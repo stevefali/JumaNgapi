@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Juma Ngapi</string>
+    <string name="month_day_year">MWEZI</string>
+    <string name="weekday_day_year">SIKU YA WIKI</string>
+
+
+   <string-array name="weekdays_array">
+       <item>Jumapili</item>
+       <item>Jumatatu</item>
+       <item>Jumanne</item>
+       <item>Jumatano</item>
+       <item>Alhamisi</item>
+       <item>Ijumaa</item>
+       <item>Jumamosi</item>
+   </string-array>
+
+    <string-array name="months_array">
+        <item>Januari</item>
+        <item>Februari</item>
+        <item>Machi</item>
+        <item>Aprili</item>
+        <item>Mei</item>
+        <item>Juni</item>
+        <item>Julai</item>
+        <item>Agosti</item>
+        <item>Septemba</item>
+        <item>Oktoba</item>
+        <item>Novemba</item>
+        <item>Desemba</item>
+    </string-array>
+    <string name="exception_message">Hakikisha umeingiza sehemu zote za tarehe sahihi</string>
+    <string name="falls">inatokea</string>
+    <string name="fell">ilitokea</string>
+    <string name="will_fall">itatokea</string>
+    <string name="sentence">Tarehe %1$s%2$d%3$s ya mwezi %4$s kwenye %5$s mara %6$d%7$s katika mwaka wa %8$d%9$s</string>
+    <string name="close_button_string">FUNGA</string>
+    <string name="policy_button_string">FARAGHA</string>
+    <string name="privacy_stuff_explanation">
+Faragha yako na usalama wa data yako ni muhimu kwetu. Unaweza kuchagua kama sisi tunaweza kutumia data yako kukuonyesha matangazo yanayokufaa wewe binafsi. Unaweza kubadilisha chaguo wakati wowote upendapo. Unaweza kusoma <a href="https://juma-ngapi.flycricket.io/privacy.html">sera ya faragha yetu na sera za faragha za wabia wetu hapa.</a></string>
+    <string name="personalized_button_text">Ruhusa Matangazo Yanayokufaa</string>
+    <string name="non_personalized_button_text">Kataza Matangazo Yanayokufaa</string>
+
+</resources>

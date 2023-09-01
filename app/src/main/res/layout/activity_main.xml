@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.kwendatech.android.jumangapi.MainActivity"
+    android:background="@color/blueGrey500"
+    android:tag="extra_small_layout"
+    android:id="@+id/lay_name">
+
+    <FrameLayout
+        android:id="@+id/frag_holder_frame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/blueGrey500"
+        android:translationZ="10dp">
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/butn_holder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/left_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/leftselected"
+            android:onClick="buttonLeft"
+            android:text="@string/month_day_year" />
+
+        <Button
+            android:id="@+id/right_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/weekday_day_year"
+            android:onClick="buttonRight"
+            android:background="@color/blueGrey600"
+            />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/pick_holder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/butn_holder"
+        >
+
+        <DatePicker
+            android:id="@+id/month_pick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:calendarViewShown="false"
+            android:datePickerMode="spinner"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="-14dp"
+            android:layout_marginBottom="-14dp"
+            android:maxDate="12/31/100000"
+            android:minDate="01/01/01"
+            >
+
+        </DatePicker>
+
+        <NumberPicker
+            android:id="@+id/yrpic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="8dp"
+            >
+        </NumberPicker>
+
+        <NumberPicker
+            android:id="@+id/dtpic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/yrpic"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="2dp"
+            >
+        </NumberPicker>
+
+        <NumberPicker
+            android:id="@+id/wkdypic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/dtpic"
+            android:layout_marginTop="2dp"
+            >
+        </NumberPicker>
+
+
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/wkdy_disp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pick_holder"
+        android:layout_marginTop="-14dp"
+        android:textSize="25dp"
+        android:textColor="@color/textDark"
+        />
+
+    <TextView
+        android:id="@+id/further_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/wkdy_disp"
+        android:textColor="@color/textDark"
+        />
+
+    <TextView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/further_info"
+        android:maxLines="4"
+        android:textColor="@color/textDark"
+        />
+
+
+    <Button
+        android:id="@+id/policy_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/adView"
+        android:layout_alignParentRight="true"
+        android:textSize="10sp"
+        app:backgroundTint="@color/blueGrey700"
+        android:text="@string/policy_button_string"
+        android:onClick="showThePolicy"
+        />
+
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id">
+    </com.google.android.gms.ads.AdView>
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/info_holder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+    </RelativeLayout>
+
+
+</RelativeLayout>

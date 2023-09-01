@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "474318300550",
+    "firebase_url": "https://jumangapi.firebaseio.com",
+    "project_id": "jumangapi",
+    "storage_bucket": "jumangapi.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:474318300550:android:74428a7a205f6cd4",
+        "android_client_info": {
+          "package_name": "com.kwendatech.android.jumangapi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "474318300550-0a8vcfviob5eamlop2g2hr3aiq90vb3k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kwendatech.android.jumangapi",
+            "certificate_hash": "6d638e7b1943e001aa4d66f1291c3cc03e942411"
+          }
+        },
+        {
+          "client_id": "474318300550-qb9f2bocv5hicquhdkp531hfreb066md.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBLFtrpXYw9EYxwXpmRLqUHVprhTJ08lJE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "474318300550-qb9f2bocv5hicquhdkp531hfreb066md.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

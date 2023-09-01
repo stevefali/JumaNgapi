@@ -1,0 +1,40 @@
+apply plugin: 'com.android.application'
+
+android {
+
+    compileSdk 33
+    defaultConfig {
+        applicationId "com.kwendatech.android.jumangapi"
+        minSdkVersion 24
+        targetSdkVersion 33
+        versionName '1.20'
+        testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
+        versionCode 6
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    productFlavors {
+    }
+    namespace 'com.kwendatech.android.jumangapi'
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    testImplementation 'junit:junit:4.13.2'
+    implementation 'com.google.firebase:firebase-ads:22.3.0'
+    implementation 'com.google.android.gms:play-services-ads:22.3.0'
+    implementation 'com.google.android.gms:play-services-ads-identifier:18.0.1'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+    implementation 'com.google.android.ads.consent:consent-library:1.0.8'
+}
+
+
+apply plugin: 'com.google.gms.google-services'
