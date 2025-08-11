@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/JumaNgapi.iml" filepath="$PROJECT_DIR$/JumaNgapi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/JumaNgapi.iml" filepath="$PROJECT_DIR$/.idea/modules/JumaNgapi.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/JumaNgapi.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/JumaNgapi.app.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/JumaNgapi.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/JumaNgapi.app.androidTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/JumaNgapi.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/JumaNgapi.app.main.iml" />
